@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import { useForm, SubmitHandler } from 'react-hook-form'
+import ContactImg from '../public/img/Contact.png'
 
 interface IFormInputs {
   name: string,
@@ -57,7 +58,7 @@ const Contact = () => {
               <div>
                 <Image
                   className='duration-300 ease-in rounded-xl hover:scale-105'
-                  src='/../public/img/Contact.png'
+                  src={ContactImg}
                   alt='/'
                   width='400'
                   height='250'
