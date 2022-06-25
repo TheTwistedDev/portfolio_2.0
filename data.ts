@@ -46,15 +46,15 @@ export const services: IService[] = [
 export const languages: ISkill  [] = [
     {
         name: 'JavaScript',
-        image_path: '/../public/skills/javascript.png', 
+        image_path: '/skills/javascript.png', 
     },
     {
         name: 'React',
-        image_path: '/../public/skills/react.png', 
+        image_path: '/skills/react.png', 
     },
     {
         name: 'Node',
-        image_path: '/../public/skills/nodejs.png', 
+        image_path: '/skills/nodejs.png', 
     },
     // {
     //     name: 'MongoDB',
@@ -62,27 +62,27 @@ export const languages: ISkill  [] = [
     // },
     {
         name: 'HTML',
-        image_path: '/../public/skills/html.png', 
+        image_path: '/skills/html.png', 
     },
     {
         name: 'TypeScript',
-        image_path: '/../public/skills/typescript.png', 
+        image_path: '/skills/typescript.png', 
     },
     {
         name: 'CSS',
-        image_path: '/../public/skills/css.png', 
+        image_path: '/skills/css.png', 
     },
     {
         name: 'GitHub',
-        image_path: '/../public/skills/github.png', 
+        image_path: '/skills/github.png', 
     },
     {
         name: 'Next',
-        image_path: '/../public/skills/nextjs.png', 
+        image_path: '/skills/nextjs.png', 
     },
     {
         name: 'Tailwind',
-        image_path: '/../public/skills/tailwind.png', 
+        image_path: '/skills/tailwind.png', 
     },
 ]
 
@@ -92,7 +92,7 @@ export const projects:IProject[] = [
         name: "Example Ecommerce Site",
         description: 
         'This app is an example ecommerce site',
-        image_path: '/../public/img/EXAMPLE_ECOMMERCE_SITE.png',
+        image_path: '/img/EXAMPLE_ECOMMERCE_SITE.png',
         projectUrl: 'ecommerce',
         deployed_url: 'https://ecommerce-site-eight.vercel.app',
         github_url: 'https://github.com/TheTwistedDev/ecommerce-site',
@@ -104,7 +104,7 @@ export const projects:IProject[] = [
         name: "Example Blog",
         description: 
         "This site is an example blog site",
-        image_path: '/../public/img/EXAMPLE_BLOG_SITE.png',
+        image_path: '/img/EXAMPLE_BLOG_SITE.png',
         projectUrl: 'blog',
         deployed_url: "https://blog-site-with-sanity.vercel.app",
         github_url: "https://github.com/TheTwistedDev/blog-site-with-sanity",
@@ -116,7 +116,7 @@ export const projects:IProject[] = [
         name: "NFT MarketPlace",
         description: 
         'This app is a Test NFT MarketPlace',
-        image_path: '/../public/img/NFT_MarketPlace.png',
+        image_path: '/img/NFT_MarketPlace.png',
         projectUrl: 'nftmarketplace',
         deployed_url: 'https://nft-challenge-xi.vercel.app',
         github_url: 'https://github.com/TheTwistedDev/nft-challenge',
