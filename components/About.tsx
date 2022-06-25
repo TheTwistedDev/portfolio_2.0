@@ -1,4 +1,5 @@
 import Image from "next/image"
+import CoffeeComputing from '../public/img/CoffeeComputing.png'
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
             <div className='col-span-1'>
                 <div className='flex items-center justify-center w-full h-auto p-4 m-auto shadow-sm bg-slate-200 shadow-gray-500 rounded-xl'>
                 <Image 
-                    src='/../public/img/CoffeeComputing.png'
+                    src={CoffeeComputing}
                     width='400'
                     height='400'
                     className='rounded-xl'
