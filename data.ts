@@ -46,15 +46,15 @@ export const services: IService[] = [
 export const languages: ISkill  [] = [
     {
         name: 'JavaScript',
-        image_path: '/public/skills/javascript.png', 
+        image_path: '/../public/skills/javascript.png', 
     },
     {
         name: 'React',
-        image_path: '/public/skills/react.png', 
+        image_path: '/../public/skills/react.png', 
     },
     {
         name: 'Node',
-        image_path: '/public/skills/nodejs.png', 
+        image_path: '/../public/skills/nodejs.png', 
     },
     // {
     //     name: 'MongoDB',
@@ -62,27 +62,27 @@ export const languages: ISkill  [] = [
     // },
     {
         name: 'HTML',
-        image_path: '/public/skills/html.png', 
+        image_path: '/../public/skills/html.png', 
     },
     {
         name: 'TypeScript',
-        image_path: '/public/skills/typescript.png', 
+        image_path: '/../public/skills/typescript.png', 
     },
     {
         name: 'CSS',
-        image_path: '/public/skills/css.png', 
+        image_path: '/../public/skills/css.png', 
     },
     {
         name: 'GitHub',
-        image_path: '/public/skills/github.png', 
+        image_path: '/../public/skills/github.png', 
     },
     {
         name: 'Next',
-        image_path: '/public/skills/nextjs.png', 
+        image_path: '/../public/skills/nextjs.png', 
     },
     {
         name: 'Tailwind',
-        image_path: '/public/skills/tailwind.png', 
+        image_path: '/../public/skills/tailwind.png', 
     },
 ]
 
