@@ -13,10 +13,10 @@ export default async (req: NextApiRequest, res: NextApiResponse<Data>) => {
     const {name, phone, email, subject, message}: {name: string, phone: string, email: string, subject: string, message: string} = req.body
     const msg = {
       to: 'TheTwistedDev@gmail.com',
-      from: 'contact@abdullah-al-suwaidi.com',
+      from: `${email}`,
       subject: `${name.toUpperCase()} sent you a message from the portfolio site about ${subject}`,
       text: `Email => ${email} phone#: ${phone}`,
-      html: `<strong>${message}</strong>`,
+      html: `<strong>${message} from ${email} with phone #: ${phone}</strong>`,
     }
     try {
       await sgMail.send(msg)

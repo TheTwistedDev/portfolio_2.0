@@ -7,6 +7,9 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import ContactImg from '../public/img/Contact.png'
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css'
+import 'tippy.js/themes/material.css'
 
 interface IFormInputs {
   name: string,
@@ -73,29 +76,36 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className='pt-8 font-bold tracking-wider uppercase'>Connect With Me</p>
+                <p className='py-8 font-bold tracking-wider uppercase'>Connect With Me</p>
                 <div className='flex items-center justify-between py-4 text-blue-600'>
                   <a href="https://www.linkedin.com/in/abdullah-al-suwaidi-787b1416b/" target="_blank"
                     rel="noreferrer">
+                    <Tippy content="LinkedIn" theme='material'>
                     <div className='p-6 duration-300 ease-in shadow-md cursor-pointer rounded-xl shadow-gray-400 hover:scale-110'>
                       <FaLinkedinIn size={22} />
                     </div>
+                    </Tippy>
                   </a>
                   <a href="https://github.com/TheTwistedDev" target="_blank"
                     rel="noreferrer">
+                    <Tippy content="GitHub" theme='material'>
                     <div className='p-6 duration-300 ease-in shadow-md cursor-pointer rounded-xl shadow-gray-400 hover:scale-110'>
                       <FaGithub size={22} />
                     </div>
+                    </Tippy>
                   </a>
-
+                  <Tippy content='Email' theme='material'>
                   <div className='p-6 duration-300 ease-in shadow-md cursor-pointer rounded-xl shadow-gray-400 hover:scale-110'>
-                    <AiOutlineMail size={22} onClick={() => window.open('mailto: contact@abdullah-al-suwaidi.com')}/>
+                    <AiOutlineMail size={22} onClick={() => window.open('mailto: abdullah.s.khalfan@gmail.com')}/>
                   </div>
+                  </Tippy>
                     <a href="/assets/abdullah-al-suwaidi-resume.pdf" 
                       download="abdullah-al-suwaidi-resume.pdf">
+                      <Tippy content='Resume' theme='material'>
                       <div className='p-6 duration-300 ease-in shadow-md cursor-pointer rounded-xl shadow-gray-400 hover:scale-110'>
                         <BsFillPersonLinesFill size={22} />
                       </div>
+                      </Tippy>
                     </a>
                 </div>
               </div>

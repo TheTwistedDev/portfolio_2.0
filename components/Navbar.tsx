@@ -19,11 +19,11 @@ const Navbar = () => {
         <div className='flex justify-center'>
           <Image 
             src={Profilepic}
-            width='60'
-            height='60'
+            width='70'
+            height='70'
             className='cursor-pointer rounded-xl'
           />
-          <div className='flex flex-col justify-center mx-4 text-3xl font-bold tracking-wide font-patrick'>
+          <div className='flex flex-col justify-center mx-4 text-xl font-bold tracking-wide sm:text-2xl lg:text-3xl font-patrick'>
             <span className='text-blue-600'>Abdullah</span> 
             <h3 className=''>Full-Stack Developer</h3>
           </div>

@@ -7,11 +7,13 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
+    "@tippyjs/react": "^4.2.6",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-hook-form": "^7.33.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "tippy.js": "^6.3.7"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
