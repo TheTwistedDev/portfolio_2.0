@@ -118,7 +118,7 @@ const Contact = () => {
           </div>
 
           {/* right */}
-          <div className='w-full h-auto col-span-3 shadow-lg shadow-gray-400 rounded-xl lg:p-4'>
+          {/* <div className='w-full h-auto col-span-3 shadow-lg shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
                 onSubmit={handleSubmit(formSubmitHandler)}
@@ -201,7 +201,7 @@ const Contact = () => {
                 </button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className='flex justify-center py-12'>
           <Link href='/'>
