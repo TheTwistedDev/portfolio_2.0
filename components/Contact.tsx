@@ -8,6 +8,7 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import ContactImg from '../public/img/Contact.png'
 import Tippy from '@tippyjs/react'
+import toast, {Toaster} from 'react-hot-toast'
 import 'tippy.js/dist/tippy.css'
 import 'tippy.js/themes/material.css'
 
@@ -34,12 +35,15 @@ const Contact = () => {
       const res = await fetch('/api/contact', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
       },
       body: JSON.stringify(data)
     })
+    toast.success("Message was Sent!")
     } catch (err) {
       console.log(err)
+      toast.error("Error Sending Message")
     }
     reset()
   }
@@ -49,6 +53,7 @@ const Contact = () => {
 
 
     <div id='contact' className='w-full lg:h-screen'>
+      <Toaster />
       <div className='max-w-[1240px] m-auto px-2 pt-16 w-full '>
         <p className='text-xl font-bold tracking-widest text-blue-600 uppercase'>
           Contact
@@ -71,7 +76,7 @@ const Contact = () => {
                 <h2 className='py-2 text-blue-600 font-patrick'>Abdullah <span className='text-black'>Al-Suwaidi</span></h2>
                 <p>Full-Stack Developer</p>
                 <p className='py-4'>
-                  I am available for freelance or full-time positions. Contact
+                  I am available for contract or full-time positions. Contact
                   me and let&apos;s talk.
                 </p>
               </div>

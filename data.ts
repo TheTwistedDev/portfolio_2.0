@@ -90,8 +90,11 @@ export const projects:IProject[] = [
     {
         id: 1,
         name: "Example Ecommerce Site",
-        description: 
-        'This app is an example ecommerce site',
+        description: 'A dummy Ecommerce store for selling electronics. Each product is labeled with a price.\n' +
+        'Clicking on the product will redirect you to the product page which displays product information like the\n' +
+        'products rating, details, image, and price. Choose the product quantity you want and add it to the cart or choose\n' +
+        'buy now which will redirect you to the shopping cart where I use a dummy stripe account to process the purchase.\n' +
+        'Click on the website logo to redirect back to the home page.',
         image_path: '/img/EXAMPLE_ECOMMERCE_SITE.png',
         projectUrl: 'ecommerce',
         deployed_url: 'https://ecommerce-site-eight.vercel.app',
@@ -101,9 +104,13 @@ export const projects:IProject[] = [
     }, 
     {
         id: 2, 
-        name: "Example Blog",
+        name: "Example Blog Site",
         description: 
-        "This site is an example blog site",
+        'This project is basic blogging site that can create blog posts for readers to read and comment on.\n' +
+        'To create a post I update the Sanity backend with a new blog post and then it gets pushed onto the front end to display to readers\n' +
+        'The readers can then add comments and in order for the comments to be seen I have to verify them for appropriateness once I verify them\n' +
+        'the comments can then be viewed by everyone visiting the site. The navbar is currently only using the site logo as a way to redirect to\n' +
+        'the home page.',
         image_path: '/img/EXAMPLE_BLOG_SITE.png',
         projectUrl: 'blog',
         deployed_url: "https://blog-site-with-sanity.vercel.app",
@@ -111,16 +118,16 @@ export const projects:IProject[] = [
         category: ["react", "typescript", "node"],
         key_techs:["React", "Next", "Sanity", "Typescript","Tailwind"],
     },
-    {
-        id: 3,
-        name: "NFT MarketPlace",
-        description: 
-        'This app is a Test NFT MarketPlace',
-        image_path: '/img/NFT_MarketPlace.png',
-        projectUrl: 'nftmarketplace',
-        deployed_url: 'https://nft-challenge-xi.vercel.app',
-        github_url: 'https://github.com/TheTwistedDev/nft-challenge',
-        category: ["react", "express", "node", "typescript"],
-        key_techs: ["React", "Next", "ThirdWeb", "Sanity", "Typescript", "Next-Auth", "Tailwind"],
-    },
+    // {
+    //     id: 3,
+    //     name: "NFT MarketPlace",
+    //     description: 
+    //     'This app is a Test NFT MarketPlace',
+    //     image_path: '/img/NFT_MarketPlace.png',
+    //     projectUrl: 'nftmarketplace',
+    //     deployed_url: 'https://nft-challenge-xi.vercel.app',
+    //     github_url: 'https://github.com/TheTwistedDev/nft-challenge',
+    //     category: ["react", "express", "node", "typescript"],
+    //     key_techs: ["React", "Next", "ThirdWeb", "Sanity", "Typescript", "Next-Auth", "Tailwind"],
+    // },
 ]
